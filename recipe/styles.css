@@ -1,0 +1,19 @@
+
+h1{
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    color: maroon;
+    font-size: 1.7rem;
+    line-height: 1.2em;
+}
+
+h2{
+    font-size: 1.3rem;
+}
+
+p{
+    line-height: 1.4em;
+}
+
+ul{
+    font-size:2rem;
+}
