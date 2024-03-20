@@ -1,0 +1,28 @@
+/* Reset some default margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Basic styling */
+header, footer {
+    background-color: lightgray;
+    padding: 10px;
+}
+
+.content {
+    overflow: hidden; /* Clear floats */
+}
+
+.col-left {
+    float: left; /* Float left */
+    width: 48%; /* 48% width */
+    margin-right: 4%; /* Add margin between columns */
+}
+
+.col-right {
+    float: right; /* Float right */
+    width: 48%; /* 48% width */
+    margin-left: 4%; /* Add margin between columns */
+}
