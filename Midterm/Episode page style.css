@@ -1,0 +1,22 @@
+.episodes {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.episode {
+    flex: 1 1 48%; /* Two episodes per row with some spacing */
+    margin: 10px;
+}
+
+.episode img {
+    width: 100%;
+    height: auto;
+}
+
+.episode h3 {
+    color: #333;
+}
+
+.episode p {
+    line-height: 1.5;
+}

@@ -3,45 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CSS Exercise</title>
-    <style>
-        /* Apply the same color to the link and visited state of all hyperlinks */
-        a {
-            color: blue;
-            text-decoration: none; /* Remove underline */
-        }
-
-        /* Add a hover state to hyperlinks */
-        a:hover {
-            color: red; /* Change color on hover */
-        }
-
-        /* Use a descendant selector to select the hyperlinks elements in the navigation list */
-        nav a {
-            color: black; /* Set color to black */
-        }
-
-        /* Remove underline from navigation links */
-        nav a:not(:hover) {
-            text-decoration: none; /* Remove underline except on hover */
-        }
-
-        /* Add a focus state to the input box */
-        input:focus {
-            background-color: lightyellow; /* Change background color on focus */
-            border: 1px solid orange; /* Add border on focus */
-        }
-    </style>
+    <title>About</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <nav>
-        <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Contact</a></li>
-        </ul>
-    </nav>
-    <input type="text" placeholder="Type something...">
-    <a href="#">Sample Link</a>
+    <header>
+        <h1>TV Show Title</h1>
+        <nav>
+            <ul>
+                <li><a href="about.html">About</a></li>
+                <li><a href="episodes.html">Episodes</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="about">
+            <h2>About the Show</h2>
+            <p>Description of the show goes here.</p>
+            <p>More information about the show.</p>
+            <p>And some additional details.</p>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 TV Show Title</p>
+    </footer>
 </body>
 </html>
