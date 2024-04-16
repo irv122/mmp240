@@ -13,3 +13,6 @@ https://irv122.github.io/mmp240/exercise5/exercise5.html
 https://irv122.github.io/mmp240/exercise6/exercise6.html
 
 https://irv122.github.io/mmp240/exercise7/exercise7.html
+
+
+https://irv122.github.io/mmp240/Quiz 2/Quiz2.html
