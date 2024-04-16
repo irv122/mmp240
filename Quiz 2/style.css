@@ -1,0 +1,11 @@
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; /* Distribute flex items evenly */
+    align-items: center; /* Center the row of boxes */
+  }
+  
+  .jump {
+    align-self: flex-end; /* Bring the box with the jump class to the bottom */
+  }
+  
