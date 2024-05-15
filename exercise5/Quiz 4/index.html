@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz 4</title>
+    
+    <style>
+      .colorboxes{
+        margin:100px;
+        width:500px;
+      }
+      .box{
+        padding:50px;
+        color:white;
+        text-align:center;
+      }
+      .redbox{
+        background-color:red;
+      }
+      .bluebox{
+        background-color:blue;
+      }
+      .greenbox{
+        background-color:green;
+      }
+
+      .layout {
+    display: grid;
+    grid-template-rows: 300px 300px;
+    grid-template-columns: 33.3% 33.3% 33.3%;
+    grid-column-gap: 16px;
+    grid-row-gap: 16px;
+}
+
+.one {
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 1; /* Start the grid item from the first row */
+    grid-row-end: 3; /* End the grid item on the third row */
+}
+
+      </style>
+
+  </head>
+  <body>
+    <div class="colorboxes">
+      <div class="box redbox">RED</div>
+      <div class="box bluebox">BLUE</div>
+      <div class="box greenbox">GREEN</div>
+    </div>
+  </body>
+</html>
