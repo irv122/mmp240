@@ -13,7 +13,23 @@
       .layout img{
         width:100%;
       }
+      #layout {
+    display: grid;
+    grid-template-rows: auto auto auto; /* Three rows */
+    grid-template-columns: 32% 32% 32%; /* Three columns */
+}
+.one {
+    grid-column-start: 1; /* Start from first column */
+    grid-column-end: 4; /* End at fourth column */
+}
+#layout {
+    grid-row-gap: 2%; /* Vertical spacing */
+    grid-column-gap: 1em; /* Horizontal spacing */
+}
+
     </style>
+    
+  
   </head>
   <body>
       <div id="wrapper">
@@ -35,5 +51,23 @@
               </div>
           </div>
     </div>
+    <div id="layout">
+      <div class="one">One</div>
+      <div id="two">Two</div>
+      <div id="three">Three</div>
+      <div id="four">Four</div>
+      <div id="five">Five</div>
+      
+    
+    </div>
+    <div id="layout">
+      <div class="one">One</div>
+      <div id="two">Two</div>
+      <div id="three">Three</div>
+      <div id="four">Four</div>
+      <div id="five">Five</div>
+  </div>
+  
+
   </body>
 </html>
