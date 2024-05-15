@@ -1,0 +1,84 @@
+body{
+   font-family: "Source Sans 3", sans-serif;
+   line-height: 1.2em;
+}
+
+
+
+#wrapper{
+    max-width:1200px;
+    margin:0 auto;
+}
+
+header{
+    
+    background: 
+    linear-gradient(90deg, rgba(0,0,0,1) 0, rgba(0,0,0,1) 300px, 
+    rgba(255,255,255,0) 600px),
+     url(avatar.jpg) right top no-repeat,
+     black;
+     padding:2em;
+  }
+
+  p{
+    margin-bottom:1em;
+  }
+
+.lead{
+   color:#fff;
+   width:300px;
+
+}
+
+h1 img{
+   max-width:100%
+
+}
+
+header button{
+    background-color: #c81519;
+    background-image: url("play_arrow.gif");
+    background-repeat: no-repeat;
+    background-position: left;
+    border:none;
+    color:#fff
+}
+
+.episode-section {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.episode {
+    margin-bottom: 20px;
+}
+
+.episode img {
+    display: block;
+    margin-bottom: 10px;
+    max-width: 100%;
+}
+
+.episode-section {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; /* Adjust alignment as needed */
+}
+
+.episode {
+    width: calc(50% - 10px); /* Adjust the width of each column */
+    margin-bottom: 20px;
+    box-sizing: border-box;
+}
+
+.episode img {
+    display: block;
+    margin-bottom: 10px;
+    max-width: 100%;
+}
+
+
