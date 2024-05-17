@@ -1,0 +1,161 @@
+/* styles.css */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #0033a0;
+    color: white;
+    padding: 10px 20px;
+}
+
+.logo {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.hero {
+    background: url('hero-image.jpg') no-repeat center center/cover;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+}
+
+.hero button {
+    background-color: #0055ff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1.2em;
+    cursor: pointer;
+}
+
+.search {
+    padding: 20px;
+}
+
+.search-options {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.search-options div {
+    flex: 1;
+    min-width: 200px;
+    padding: 10px;
+}
+
+.featured-programs {
+    padding: 20px;
+}
+
+footer {
+    background-color: #0033a0;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.program-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.program-card {
+    background-color: #f4f4f4;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.program-card img {
+    max-width: 100%;
+    border-radius: 5px;
+}
+
+.program-card h3 {
+    font-size: 1.2em;
+    margin: 10px 0;
+}
+
+.program-card a {
+    display: block;
+    margin-top: 10px;
+    color: #0055ff;
+    text-decoration: none;
+}
+
+@media (max-width: 768px) {
+    .search-options {
+        flex-direction: column;
+    }
+
+    .program-cards {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+/* Add to styles.css */
+
+/* Transitions for buttons */
+button, .program-card a {
+    transition: background-color 0.3s, color 0.3s;
+}
+
+button:hover, .program-card a:hover {
+    background-color: #0033a0;
+    color: white;
+}
+
+/* More detailed styling for different sections */
+header, footer {
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.search-options button {
+    background-color: #e0e0e0;
+    border: 1px solid #ccc;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.search-options button:hover {
+    background-color: #ccc;
+}
+
+/* Flexbox for homepage columns */
+@media (min-width: 769px) {
+    .search-options {
+        display: flex;
+        justify-content: space-around;
+    }
+}
