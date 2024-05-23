@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz 4</title>
+
+    <style>
+      .colorboxes {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 10px;
+        margin: 100px auto;
+        width: 80%;
+        max-width: 500px;
+        position: relative; /* Ensure the container is positioned relative for absolute positioning of children */
+      }
+      .box {
+        padding: 50px;
+        color: white;
+        text-align: center;
+        position: relative; /* Make all boxes relative by default */
+      }
+      .redbox {
+        background-color: red;
+        
+        grid-column-start: 1;
+        grid-column-end: 4;
+      }
+      .bluebox {
+        background-color: blue;
+        position: absolute; /* Position the blue box absolutely within the container */
+        top: 0; /* Align the blue box at the top */
+        left: 0; /* Align the blue box to the left */
+        z-index: 1; /* Ensure the blue box is on top of the red box */
+      }
+      .greenbox {
+        background-color: green;
+        bottom: 10px;
+        grid-column-start: 1;
+        grid-column-end: 4;
+      }
+    </style>
+
+</head>
+<body>
+    <div class="colorboxes">
+        <div class="box redbox">RED</div>
+        <div class="box bluebox">BLUE</div>
+        <div class="box greenbox">GREEN</div>
+    </div>
+</body>
+</html>
