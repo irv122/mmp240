@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - CUNY</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header role="banner">
+        <div class="logo">CUNY</div>
+        <nav role="navigation">
+            <ul>
+                <li><a href="Homepage.html" title="Home">Home</a></li>
+                <li><a href="programs.html" title="Programs">Programs</a></li>
+                <li><a href="about.html" title="About" class="active">About</a></li>
+                <li><a href="contact.html" title="Contact">Contact</a></li>
+                <li><a href="CategoryPage.html" title="Categories">Categories</a></li>
+            </ul>
+        </nav>
+
+        <style>
+           body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #0033a0;
+    color: white;
+    padding: 10px 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 5px 10px;
+}
+
+nav ul li a:hover,
+nav ul li a:focus {
+    background-color: #0055ff;
+    border-radius: 5px;
+}
+
+nav ul li a.active {
+    border-bottom: 2px solid #0055ff;
+}
+
+main {
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.about-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.about-content h3 {
+    margin-top: 20px;
+    color: #0033a0;
+}
+
+.about-content ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+.about-content ul li {
+    margin-bottom: 10px;
+}
+
+footer {
+    background-color: #0033a0;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.contact-info a,
+.social-media a {
+    color: white;
+    text-decoration: none;
+}
+
+.contact-info a:hover,
+.contact-info a:focus,
+.social-media a:hover,
+-social-media a:focus {
+    text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+    .about-content {
+        padding: 0 10px;
+    }
+}
+ 
+        </style>
+    </header>
+    <main>
+        <h1>About Us</h1>
+        <section class="about-content" role="region" aria-labelledby="about-heading">
+            <h2 id="about-heading" class="visually-hidden">About CUNY</h2>
+            <p>The City University of New York (CUNY) is the nation's largest urban public university, comprising 25 institutions: 11 senior colleges, seven community colleges, and seven graduate, honors, and professional schools. CUNY provides high-quality, accessible education to all New Yorkers, regardless of background or means.</p>
+            <p>Founded in 1847 as the Free Academy, CUNY has grown into a diverse and dynamic institution that offers more than 1,750 academic programs, from certificates to doctoral degrees. Our mission is to provide a world-class education to all students and to foster a vibrant learning environment that promotes intellectual growth and social responsibility.</p>
+            <h3>Our Mission</h3>
+            <p>Our mission is to provide an inclusive and diverse academic community that fosters learning, scholarship, and service. We are committed to creating a supportive environment where students can achieve their full potential and contribute to the betterment of society.</p>
+            <h3>Our Values</h3>
+            <ul>
+                <li>Access and Opportunity: Providing educational opportunities to all New Yorkers.</li>
+                <li>Excellence: Maintaining high standards in teaching, research, and service.</li>
+                <li>Innovation: Encouraging creative and critical thinking across all disciplines.</li>
+                <li>Community: Building a supportive and collaborative academic environment.</li>
+            </ul>
+            <h3>Our History</h3>
+            <p>CUNY has a rich history that dates back to its founding in 1847. Over the years, CUNY has grown and evolved to meet the needs of New York City and its diverse population. Today, we are proud to be a leader in urban public education, serving over 275,000 degree-seeking students and nearly 260,000 adult and continuing education students.</p>
+        </section>
+    </main>
+    <footer role="contentinfo">
+        <div class="contact-info">
+            <p>Contact Us: <a href="mailto:info@cuny.edu">info@cuny.edu</a></p>
+            <p>Phone: <a href="tel:123-456-7890">123-456-7890</a></p>
+        </div>
+        <div class="social-media">
+            <a href="#" title="Facebook">Facebook</a>
+            <a href="#" title="Twitter">Twitter</a>
+            <a href="#" title="Instagram">Instagram</a>
+        </div>
+    </footer>
+</body>
+</html>

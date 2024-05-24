@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Categories - CUNY</title>
+    <title>Design Programs - CUNY</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -15,7 +15,7 @@
                 <li><a href="programs.html" title="Programs">Programs</a></li>
                 <li><a href="about.html" title="About">About</a></li>
                 <li><a href="contact.html" title="Contact">Contact</a></li>
-                <li><a href="CategoryPage.html" title="Categories" class="active">Categories</a></li>
+                <li><a href="CategoryPage.html" title="Categories">Categories</a></li>
             </ul>
         </nav>
 
@@ -64,43 +64,57 @@ nav ul li a:focus {
     border-radius: 5px;
 }
 
-nav ul li a.active {
-    border-bottom: 2px solid #0055ff;
-}
-
 main {
     padding: 20px;
-    text-align: center;
 }
 
 h1 {
+    text-align: center;
     margin-bottom: 20px;
 }
 
-.categories {
-    max-width: 800px;
-    margin: 0 auto;
+.program-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    padding: 20px;
 }
 
-.categories ul {
-    list-style-type: none;
-    padding: 0;
+.program-card {
+    background-color: #f4f4f4;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+    transition: background-color 0.3s, color 0.3s;
 }
 
-.categories ul li {
+.program-card img {
+    max-width: 100%;
+    border-radius: 5px;
+}
+
+.program-card h3 {
+    font-size: 1.2em;
     margin: 10px 0;
 }
 
-.categories ul li a {
-    text-decoration: none;
-    color: #0033a0;
-    font-size: 1.2em;
-    transition: color 0.3s;
+.program-card p {
+    margin: 5px 0;
 }
 
-.categories ul li a:hover,
-.categories ul li a:focus {
+.program-card a {
+    display: block;
+    margin-top: 10px;
     color: #0055ff;
+    text-decoration: none;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.program-card a:hover,
+.program-card a:focus {
+    background-color: #0033a0;
+    color: white;
+    border-radius: 5px;
 }
 
 footer {
@@ -111,43 +125,41 @@ footer {
     box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
 }
 
-footer .contact-info {
-    margin-bottom: 10px;
-}
-
-footer .contact-info a,
-footer .social-media a {
+.contact-info a,
+.social-media a {
     color: white;
     text-decoration: none;
 }
 
-footer .contact-info a:hover,
-footer .contact-info a:focus,
-footer .social-media a:hover,
-footer .social-media a:focus {
+.contact-info a:hover,
+.contact-info a:focus,
+.social-media a:hover,
+.social-media a:focus {
     text-decoration: underline;
 }
 
 @media (max-width: 768px) {
-    .categories {
-        padding: 0 10px;
+    .program-cards {
+        grid-template-columns: 1fr;
     }
 }
 
         </style>
     </header>
     <main>
-        <h1>Program Categories</h1>
-        <section class="categories" role="region" aria-labelledby="category-heading">
-            <h2 id="category-heading" class="visually-hidden">List of Categories</h2>
-            <ul>
-                <li><a href="digital-design.html">Digital Design</a></li>
-                <li><a href="animation.html">Animation</a></li>
-                <li><a href="industrial-design.html">Industrial Design</a></li>
-                <li><a href="graphic-design.html">Graphic Design</a></li>
-                <li><a href="interior-design.html">Interior Design</a></li>
-                <li><a href="fashion-design.html">Fashion Design</a></li>
-            </ul>
+        <h1>Design Programs</h1>
+        <section class="program-cards" role="region" aria-labelledby="programs-heading">
+            <h2 id="programs-heading" class="visually-hidden">Design Programs</h2>
+            <!-- Example program card -->
+            <div class="program-card">
+                <img src="Cuny1.jpeg" alt="Image representing the program at School Name">
+                <h3>School Name</h3>
+                <p>Program Name</p>
+                <p>Degree: Bachelor's</p>
+                <p>Description of the program. This can include details about the curriculum, career opportunities, and unique features of the program.</p>
+                <a href="program-link" title="Learn more about Program Name at School Name">Learn More</a>
+            </div>
+            <!-- Repeat for each program -->
         </section>
     </main>
     <footer role="contentinfo">

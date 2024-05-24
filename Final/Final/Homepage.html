@@ -7,32 +7,32 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
+    <header role="banner">
         <div class="logo">CUNY</div>
-        <nav>
+        <nav role="navigation">
             <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Programs</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Contact</a></li>
-                <li><a href="CategoryPage.html">Learn More</a></li>
+                <li><a href="Homepage.html" title="Home">Home</a></li>
+                <li><a href="Programs.html" title="Programs">Programs</a></li>
+                <li><a href="about.html" title="About">About</a></li>
+                <li><a href="contact.html" title="Contact">Contact</a></li>
+                <li><a href="CategoryPage.html" title="Categories">Categories</a></li>
             </ul>
         </nav>
     </header>
     <main>
-        <section class="hero">
-            <img src="Cuny.jpeg" alt="Design Programs Banner">
-            
+        <section class="hero" role="region" aria-labelledby="hero-heading">
+            <h1 id="hero-heading" class="visually-hidden">CUNY Design and Animation Programs</h1>
+            <img src="Cuny.jpeg" alt="Banner showcasing CUNY's Design and Animation Programs">
         </section>
-        <section class="search">
+        <section class="search" role="search">
             <h2>Find Your Program</h2>
             <div class="search-options">
                 <div class="search-by-borough">
                     <h3>Search by Borough</h3>
-                    <button>Brooklyn</button>
-                    <button>Bronx</button>
-                    <button>Manhattan</button>
-                    <button>Queens</button>
+                    <a href="Brooklyn.html"><button>Brooklyn</button></a>
+                    <a href="Bronx.html"><button>Bronx</button></a>
+                    <a href="Manhattan.html"><button>Manhattan</button></a>
+                    <a href="Queens.html"><button>Queens</button></a>
                 </div>
                 <div class="search-by-discipline">
                     <h3>Search by Discipline</h3>
@@ -47,20 +47,27 @@
                 </div>
             </div>
         </section>
-        <section class="featured-programs">
-            <h2>Featured Programs</h2>
-            <!-- Program cards will be inserted here -->
+        <section class="featured-programs" role="region" aria-labelledby="featured-heading">
+            <h2 id="featured-heading">Featured Programs</h2>
+            <!-- Placeholder for program cards -->
+            <!-- Example program card:
+            <div class="program-card">
+                <h3>Program Name</h3>
+                <p>Description of the program.</p>
+                <a href="#">Learn more</a>
+            </div>
+            -->
         </section>
     </main>
-    <footer>
+    <footer role="contentinfo">
         <div class="contact-info">
-            <p>Contact Us: info@cuny.edu</p>
-            <p>Phone: 123-456-7890</p>
+            <p>Contact Us: <a href="mailto:info@cuny.edu">info@cuny.edu</a></p>
+            <p>Phone: <a href="tel:123-456-7890">123-456-7890</a></p>
         </div>
         <div class="social-media">
-            <a href="#">Facebook</a>
-            <a href="#">Twitter</a>
-            <a href="#">Instagram</a>
+            <a href="#" title="Facebook">Facebook</a>
+            <a href="#" title="Twitter">Twitter</a>
+            <a href="#" title="Instagram">Instagram</a>
         </div>
     </footer>
 </body>
